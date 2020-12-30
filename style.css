@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+body {
+    font-family: "Montserrat";
+}
+.container {
+    position: relative;
+    max-width: 100%;
+}
+.background-img {
+    position: absolute;
+    background: url(img/unfinished-white-jigsaw.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.background__transparent {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(64, 64, 64, 0.6);
+    z-index: 1;
+}
+.error p {
+    position: relative;
+    color: #c43d3d;
+    margin: 0 0 1.2rem 0;
+    padding: 0 0 0 2em;
+}
+.error p::before {
+    content: "\2762";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 2em;
+}
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+.wrapper__first-block, 
+.overlay__quest {
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.quest {
+    max-width: 500px;
+    padding: 4em 3.5em;
+    background: #fff;
+}
+.wrapper__first-block * {
+    box-sizing: border-box;
+}
+.first-number {
+    max-width: 500px;
+    background: #fff;
+    padding: 4em 3.5em;
+}
+.first-number h1, 
+.quest h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+.first-number {
+    font-size: 1em;
+    line-height: 1.2em;
+}
+.first-number p span, 
+.quest p span, 
+.error p span {
+    font-weight: 700;
+}
+.first-number label {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.first-number input {
+    outline: none;
+}
+.first-number input[type="text"] {
+    width: 100%;
+    padding: 1.2em 1em;
+    margin: 0.5em 0 0 0;
+
+}
+.first-number input[type="submit"], 
+.quest button {
+    width: 200px;
+    padding: 1.1em 0;
+    text-align: center;
+    border: none;
+    background: #5e3c82;
+    color: #fff;
+}
+.first-number input[type="submit"]:hover, 
+.quest button:hover {
+    transition: 0.3s;
+    background: #512b7a;
+}
+.game-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-md-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: 0;
+    padding: 3.5em 2em;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 19px -5px #0A1530; 
+box-shadow: 0px 1px 19px -5px #0A1530;
+}
+.card-header, 
+.card-footer, 
+.card {
+    background: none;
+    border: none;
+}
+.card-header:first-child {
+    margin: 0 auto;
+    font-size: 0.9em;
+    max-width: 150px;
+    background: #bf93ef;
+    color: #fff;
+    border-radius: 30px;
+}
+.card-title {
+    font-weight: 900;
+}
+.btn-group button {
+    width: 130px;
+    padding: 1em 0;
+    outline: none;
+}
+
+.btn-group button:last-child,
+.btn-group button:first-child {
+    width: 160px;
+    border-radius: 0;
+    border: none;
+    background: #5e3c82;
+}
+.btn-group button:last-child:hover,
+.btn-group button:first-child:hover {
+    transition: 0.3s;
+    background: #512b7a;
+}
+.btn-group button span {
+    display: block;
+}
+.btn-group button:last-child span:first-child,
+.btn-group button:first-child span:first-child, 
+button#btnEqual {
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.btn-group button:last-child span:last-child,
+.btn-group button:first-child span:last-child {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 0.9em;
+}
+.btn-group #btnEqual {
+    font-size: 1.1em;
+    margin: 0 2px 0 1px;
+    background: #c13342;
+    border: none;
+}
+button#btnEqual:hover {
+    background: #b32837;
+}
+.card-footer button {
+    width: 150px;
+    background: #dcbc00;
+    border-radius: 30px;
+    padding: 0.7em 0;
+    color: #fff;
+}
+.card-footer button:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #c3a700;
+}
